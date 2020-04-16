@@ -1,8 +1,12 @@
 #ifndef FORD_FULKERSON
 #define FORD_FULKERSON
 
-#include <bits/stdc++.h>
 #include "Graph.h"
+#include <set>
+
+#define max(a, b) (a > b ? a : b)
+#define min(a, b) (a < b ? a : b)
+#define INF 2000000000
 
 using namespace std;
 

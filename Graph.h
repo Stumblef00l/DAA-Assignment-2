@@ -1,7 +1,8 @@
 #ifndef GRAPH
 #define GRAPH
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -11,8 +12,12 @@ public:
     /** 
      * Adjacency list
      */
-    vector<map<int, int>> adj;
+    vector<vector<int>> adj;
 
+    /**
+     * Capacities
+     */
+    vector<vector<int>> capacities;
     /** 
      * Number of nodes
      */

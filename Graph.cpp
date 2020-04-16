@@ -2,26 +2,23 @@
 
 Graph::Graph(int nodes, int edges) : n(nodes), m(edges)
 {
-    map<int, int> v;
-    adj.push_back(v);
+    vector<int> v;
+    capacities.push_back(v);
     visited.resize(n + 1, false);
-    for (int i = 1; i <= n; i++)
+    vector<int> zeroCap(n + 1, 0);
+    for (int i = 1; i <= n + 1; i++)
     {
-        map<int, int> newList;
-        adj.push_back(newList);
+        adj.push_back(v);
+        capacities.push_back(zeroCap);
     }
+
     cout << "Enter " << m << " edges:\n";
     for (int i = 1; i <= m; i++)
     {
         int u, v, w;
         cin >> u >> v >> w;
-        adj[u][v] = w;
-        adj[v][u] = w;
+        adj[u].push_back(v);
+        capacities[u][v] = w;
     }
 }
-
-Graph::Graph()
-{
-    n = 0;
-    m = 0;
-}
+Graph::Graph() {}
