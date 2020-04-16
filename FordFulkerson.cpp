@@ -23,6 +23,7 @@ FordFulkerson::FordFulkerson(Graph &inputGraph, int s, int t) : graph(inputGraph
             residual.adj[i].push_back(it);
             residual.adj[it].push_back(i);
             residual.capacities[i][it] += graph.capacities[i][it];
+            residual.m += 2;
         }
     }
     FordFulkerson::calculateMaxFlow();

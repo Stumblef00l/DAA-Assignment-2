@@ -3,7 +3,6 @@
 Graph::Graph(int nodes, int edges) : n(nodes), m(edges)
 {
     vector<int> v;
-    capacities.push_back(v);
     visited.resize(n + 1, false);
     vector<int> zeroCap(n + 1, 0);
     for (int i = 1; i <= n + 1; i++)
