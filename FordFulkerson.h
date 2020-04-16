@@ -10,6 +10,9 @@
 
 using namespace std;
 
+/**
+ * Class to apply FordFulkerson algorithm to a given network
+ */
 class FordFulkerson
 {
     Graph graph;
