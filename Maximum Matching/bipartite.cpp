@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    freopen("out.opsahl-collaboration", "r", stdin);
+    freopen("opsahl-collaboration_output.txt", "w", stdout);
     cout << "Enter number of nodes: ";
     int n;
     cin >> n;
@@ -21,6 +23,7 @@ int main()
     {
         int u, v;
         cin >> u >> v;
+        v += 16726;
         adj[u].push_back(v);
         leftSide.insert(u);
     }
