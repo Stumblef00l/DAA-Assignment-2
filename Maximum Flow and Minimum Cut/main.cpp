@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
+    freopen("test3.txt", "r", stdin);
+    freopen("output_test3.txt", "w", stdout);
     cout << "Enter number of nodes: ";
     int n;
     cin >> n;

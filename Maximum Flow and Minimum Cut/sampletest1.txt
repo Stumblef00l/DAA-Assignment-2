@@ -1,6 +1,4 @@
-Enter number of nodes: 8
-Enter number of edges: 15
-Enter the edges:
+8 15
 1 2 10
 1 3 5
 1 4 15
@@ -16,5 +14,4 @@ Enter the edges:
 6 8 10
 7 8 10
 7 3 6
-Enter source vertex: 1
-Enter sink vertex: 8
+1 8
