@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <iostream>
+#include <unordered_map>
 
 using namespace std;
 
@@ -17,7 +18,7 @@ public:
     /**
      * Capacities
      */
-    vector<vector<int>> capacities;
+    vector<unordered_map<int, int>> capacities;
     /** 
      * Number of nodes
      */
@@ -38,7 +39,7 @@ public:
      * @param nodes The number of nodes.
      * @param edges The number of edges.
      */
-    Graph(int nodes, int edges);
+    Graph(int nodes, int edges, vector<vector<int>> &adjList, vector<unordered_map<int, int>> &capList);
 
     /**
      * Default constructor for the class.

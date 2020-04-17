@@ -10,7 +10,24 @@ int main()
     cout << "Enter number of edges: ";
     int m;
     cin >> m;
-    Graph inputGraph = Graph(n, m);
+    vector<vector<int>> adj;
+    vector<unordered_map<int, int>> capacities;
+    vector<int> tempAdj;
+    unordered_map<int, int> tempCap;
+    for (int i = 1; i <= n + 1; i++)
+    {
+        adj.push_back(tempAdj);
+        capacities.push_back(tempCap);
+    }
+    cout << "Enter the edges:\n";
+    for (int i = 1; i <= m; i++)
+    {
+        int u, v, w;
+        cin >> u >> v >> w;
+        adj[u].push_back(v);
+        capacities[u][v] = w;
+    }
+    Graph inputGraph = Graph(n, m, adj, capacities);
     cout << "Enter source vertex: ";
     int srcVertex;
     cin >> srcVertex;

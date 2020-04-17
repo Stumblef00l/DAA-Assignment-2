@@ -10,7 +10,7 @@ FordFulkerson::FordFulkerson(Graph &inputGraph, int s, int t) : graph(inputGraph
     for (int i = 1; i <= graph.n; i++)
         tcut.insert(i);
     vector<int> v;
-    vector<int> zeroCap(residual.n + 1, 0);
+    unordered_map<int, int> zeroCap;
     for (int i = 1; i <= residual.n + 1; i++)
     {
         residual.adj.push_back(v);
