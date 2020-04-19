@@ -1,3 +1,4 @@
+Time taken: 0.051463 seconds
 Max Flow: 251
 Min Cut:
 s - cut: 2 4112 

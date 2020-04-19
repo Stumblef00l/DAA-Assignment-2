@@ -1,17 +1,17 @@
 #include "FordFulkerson.h"
+#include <time.h>
 
 using namespace std;
 
 int main()
 {
-    freopen("test3.txt", "r", stdin);
-    freopen("output_test3.txt", "w", stdout);
     cout << "Enter number of nodes: ";
     int n;
     cin >> n;
     cout << "Enter number of edges: ";
     int m;
     cin >> m;
+    clock_t beg, fin;
     vector<vector<int>> adj;
     vector<unordered_map<int, int>> capacities;
     vector<int> tempAdj;
@@ -36,7 +36,10 @@ int main()
     cout << "Enter sink vertex: ";
     int sinkVertex;
     cin >> sinkVertex;
+    beg = clock();
     FordFulkerson solutionObject = FordFulkerson(inputGraph, srcVertex, sinkVertex);
+    fin = clock();
+    cout << "Time taken: " << (double(fin - beg)) / (double(CLOCKS_PER_SEC)) << " seconds\n";
     cout << "Max Flow: " << solutionObject.getMaxFlow() << "\n";
     cout << "Min Cut:\n";
     solutionObject.displayMinCut();
