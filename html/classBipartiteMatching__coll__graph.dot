@@ -1,0 +1,11 @@
+digraph "BipartiteMatching"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="BipartiteMatching",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" graph" ,fontname="Helvetica"];
+  Node2 [label="Graph",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGraph.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" maxFlowObject" ,fontname="Helvetica"];
+  Node3 [label="FordFulkerson",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFordFulkerson.html",tooltip="Class to apply FordFulkerson algorithm to a given network. "];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" graph\nresidual" ,fontname="Helvetica"];
+}
