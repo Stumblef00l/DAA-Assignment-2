@@ -7,3 +7,6 @@ Group 24:
 - Kushagra Srivastava - 2017A7PS0146H
 - Sandesh Thakar - 2017A7PS0181H
 - Ekanshi Agrawal - 2017A7PS0233H
+
+
+For discussions and results, check out the __Related Pages__ tab on the top.
