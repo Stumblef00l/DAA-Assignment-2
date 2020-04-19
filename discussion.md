@@ -27,3 +27,7 @@ In each step, we find an augmenting path which takes O(m) time. The max number o
 The space complexity of the algorithm is O(n+m). The dominating space occupation are the graph and the corresponding auxillary graph, which are stores in adjacency lists and henc take up O(n+m) space.
 
 ## References, Issues, and Remarks
+
+References: Lecture slides.
+
+Issues while coding: The major issue while coding was storing the edge capacities optimally. This was a problem as a direct adjacency list implementation using an array of vectors, although would occupy O(n+m) memory but would require O(n) for lookup for the capacity values. The other option was using an adjacency matrix, which allows O(1) lookup but would need O(n^2) memory. The third option was using an ordered map (binary search tree), which has O(logn) lookup and O(n+m) storage. Finally, the option we ended up using was using an unordered hashmap which has O(1) lookup and O(n+m) memory.
