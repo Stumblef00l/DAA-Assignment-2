@@ -10,3 +10,14 @@ Group 24:
 
 
 For discussions and results, check out the __Related Pages__ tab on the top.
+
+### How to run:
+Max-Flow Min-Cut:
+- Navigate to `Maximum Flow and Minimum Cut/`
+- run `make` command
+- run `./main`
+
+Bipartite Matching:
+- Navigate to `Maximum Matching/`
+- run `make` command
+- run `./bipartite`

@@ -1,6 +1,7 @@
-# Discussion
+Discussion
+===
 
-Results on various Tests can be found in the `Tests` file on the _Related Pages_ tab.\n
+Results on various Tests can be found in the `Tests` file on the _Related Pages_ tab.
 
 ## Algorithm Discussion
 
@@ -20,14 +21,14 @@ Max flow can be used to find maximum matching of a bipartite graph, by assigning
 
 ## Runtime Analysis
 
-The Ford Fulkerson algorithm implemented here takes O((m^2) \* log(C)). Here, m is the number of edges in the graph and C is the max capacity edge originating at the the source vertex.
+The Ford Fulkerson algorithm implemented here takes `O((m^2)*log(C))`. Here, m is the number of edges in the graph and C is the max capacity edge originating at the the source vertex.
 
-In each step, we find an augmenting path which takes O(m) time. The max number of edges which need to be exhausted before termination is also O(m). Lastly, we use the delta optimizations to find good augmenting paths. This brings down the time from an extra O(C) to O(log(C)). Hence the runtime.
+In each step, we find an augmenting path which takes _O(m)_ time. The max number of edges which need to be exhausted before termination is also _O(m)_. Lastly, we use the delta optimizations to find good augmenting paths. This brings down the time from an extra _O(C)_ to _O(log(C))_. Hence the runtime.
 
-The space complexity of the algorithm is O(n+m). The dominating space occupation are the graph and the corresponding auxillary graph, which are stores in adjacency lists and henc take up O(n+m) space.
+The space complexity of the algorithm is _O(n+m)_. The dominating space occupation are the graph and the corresponding auxillary graph, which are stores in adjacency lists and henc take up _O(n+m)_ space.
 
 ## References, Issues, and Remarks
 
 References: Lecture slides.
 
-Issues while coding: The major issue while coding was storing the edge capacities optimally. This was a problem as a direct adjacency list implementation using an array of vectors, although would occupy O(n+m) memory but would require O(n) for lookup for the capacity values. The other option was using an adjacency matrix, which allows O(1) lookup but would need O(n^2) memory. The third option was using an ordered map (binary search tree), which has O(logn) lookup and O(n+m) storage. Finally, the option we ended up using was using an unordered hashmap which has O(1) lookup and O(n+m) memory.
+Issues while coding: The major issue while coding was storing the edge capacities optimally. This was a problem as a direct adjacency list implementation using an array of vectors, although would occupy _O(n+m)_ memory but would require _O(n)_ for lookup for the capacity values. The other option was using an adjacency matrix, which allows _O(1)_ lookup but would need _O(n^2)_ memory. The third option was using an ordered map (binary search tree), which has _O(logn)_ lookup and _O(n+m)_ storage. Finally, the option we ended up using was using an unordered hashmap which has _O(1)_ lookup and _O(n+m)_ memory.
