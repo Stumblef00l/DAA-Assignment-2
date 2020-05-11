@@ -1,5 +1,5 @@
-# DAA-Assignment-2
-Implementing the Ford Fulkerson algorithm to calculate maximum flow of a network.
+# Maximum Flows in Networks and Maximum Bipartite Matching
+This repository implements the Ford Fulkerson algorithm to calculate maximum flow in a network. The Maximum flow algorithm extended for finding the maximum matching of a bipartite graph efficiently.
 
 ## Group Members
 Group 24:
